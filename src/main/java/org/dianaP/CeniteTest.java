@@ -72,8 +72,8 @@ public class CeniteTest {
     public void testFormAbv() throws Exception{
     driver.get("https://www.abv.bg/");
     Thread.sleep(5000);
-    driver.findElement(By.id("username")).sendKeys("workdiana");
-    driver.findElement(By.id("password")).sendKeys("ilovecuci");
+    driver.findElement(By.id("username")).sendKeys("gigu");
+    driver.findElement(By.id("password")).sendKeys("gigu2");
     WebElement SignIn = driver.findElement(By.xpath("//*[@id=\"loginBut\"]"));
     SignIn.click();
         Thread.sleep(10000);
@@ -157,7 +157,7 @@ Thread.sleep(5000);
 WebElement silen = driver.findElement(By.xpath("//*[@id=\"statuspass\"]/tbody/tr/td[3]/span"));
 Thread.sleep(5000);
 String sigurna = "сигурна";
-assertEquals(sigurna, silen.getText().contains("сигурна"));
+assertEquals(sigurna, silen.getText());
 //assertTrue(silen.getText().contains("сигурна"));
 
 }
